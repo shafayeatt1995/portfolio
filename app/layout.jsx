@@ -8,7 +8,7 @@ import "@/public/css/jquery.modal.min.css";
 import "@/public/css/meanmenu.css";
 import "@/public/css/swipper.css";
 import "@/public/css/main.css";
-import Fa from "@/components/fa";
+import Fa from "../components/Fa";
 
 const inter = Inter({ subsets: ["latin"] });
 
