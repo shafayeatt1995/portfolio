@@ -108,7 +108,7 @@ export default function Home() {
                       </div>
                       <div className="text">
                         <span>Phone</span>
-                        <p>+123 456 7890</p>
+                        <p>+8801728-293635</p>
                       </div>
                     </div>
 
