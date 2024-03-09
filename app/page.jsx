@@ -114,11 +114,11 @@ export default function Home() {
 
                     <div className="anik-personal-info-contact-item email">
                       <div className="icon">
-                        <i className="fa-regular fa-envelope-open-text"></i>
+                        <i className="fa-regular fa-envelope"></i>
                       </div>
                       <div className="text">
                         <span>Email</span>
-                        <p>example@mail.com</p>
+                        <p class="lowercase">shafayetalanik@gmail.com</p>
                       </div>
                     </div>
 
@@ -128,17 +128,7 @@ export default function Home() {
                       </div>
                       <div className="text">
                         <span>Location</span>
-                        <p>Hong kong china</p>
-                      </div>
-                    </div>
-
-                    <div className="anik-personal-info-contact-item calendar">
-                      <div className="icon">
-                        <i className="fa-light fa-calendar-days"></i>
-                      </div>
-                      <div className="text">
-                        <span>Birthday</span>
-                        <p>May 27, 1990</p>
+                        <p>Dhanmondi 15, Dhaka</p>
                       </div>
                     </div>
                   </div>
@@ -146,9 +136,9 @@ export default function Home() {
                   <div className="anik-personal-info-btn">
                     <a className="btn-1" href="#">
                       <span className="icon">
-                        <i className="fa-regular fa-download"></i>
+                        <i className="fas fa-download"></i>
                       </span>
-                      download cv
+                      download CV
                     </a>
                   </div>
                 </div>

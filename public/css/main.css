@@ -2826,7 +2826,9 @@ width: 18px;
   background: #1a1919;
   color: #fff;
 }
-
+.lowercase{
+  text-transform: lowercase !important;
+}
 .anik-personal-info-social-link li a:hover svg * {
   fill: var(--common-white);
 }
