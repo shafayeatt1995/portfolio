@@ -1797,6 +1797,13 @@ textarea:focus::placeholder {
   display: none;
 }
 
+.pointer{
+  cursor: pointer;
+}
+.w-full{
+  width: 100%;
+}
+
 /*
 ************
 *************************
@@ -2020,9 +2027,6 @@ textarea:focus::placeholder {
   padding-bottom: 0;
 }
 
-.anik-page-title-wrap p {
-  max-width: 632px;
-}
 
 .page-title {
   position: relative;
