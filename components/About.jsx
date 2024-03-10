@@ -18,7 +18,7 @@ export default function About() {
     { name: "SASS", image: "/img/tech/sass.svg", star: 5 },
     { name: "Socket", image: "/img/tech/socket.svg", star: 5 },
     { name: "AWS", image: "/img/tech/aws.svg", star: 3 },
-    { name: "Laravel (Basic)", image: "/img/tech/laravel.svg", star: 2 },
+    { name: "Laravel", image: "/img/tech/laravel.svg", star: 2 },
   ];
   return (
     <>
@@ -113,7 +113,7 @@ export default function About() {
         <div className="anik-section-title-wrap text-center mb-50">
           <h3 className="section-title">Technology i use</h3>
         </div>
-        <div className="flex justify-between flex-wrap gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6  gap-8">
           {tech.map((t) => (
             <div className="flex flex-col justify-between min-h-100 mb-6">
               <Image

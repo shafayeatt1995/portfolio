@@ -75,7 +75,9 @@ export default function LeftSidebar() {
               </div>
               <div className="text">
                 <span>Phone</span>
-                <p>+8801728-293635</p>
+                <a className=" text-black" href="tel: 01728203635">
+                  +8801728-293635
+                </a>
               </div>
             </div>
 
@@ -85,7 +87,12 @@ export default function LeftSidebar() {
               </div>
               <div className="text">
                 <span>Email</span>
-                <p className="lowercase">shafayetalanik@gmail.com</p>
+                <a
+                  href="mailto:shafayet@scaneating.com"
+                  className="lowercase text-black"
+                >
+                  shafayetalanik@gmail.com
+                </a>
               </div>
             </div>
 
