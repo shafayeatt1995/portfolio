@@ -5,6 +5,7 @@ import LeftSidebar from "@/components/LeftSidebar";
 import Resume from "@/components/Resume";
 import Footer from "@/components/Footer";
 import About from "@/components/About";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   let [activeTab, setActiveTab] = useState("about");

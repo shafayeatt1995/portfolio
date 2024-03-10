@@ -3961,10 +3961,8 @@ width: 18px;
   outline: none;
   border-bottom: 1px solid #b5b5b5;
   background: transparent;
-  height: 15px;
   transition: 0.3s;
   transform-origin: top;
-  font-size: 14px;
 }
 .contact-form .input-box:is(.height) {
   height: 40px;

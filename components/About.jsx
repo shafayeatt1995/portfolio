@@ -77,7 +77,7 @@ export default function About() {
             <div className="col-xxl-6 col-xl-6 col-lg-6">
               <div className="anik-what-do-item bg-catkrill">
                 <div className="icon">
-                  <i class="fa-solid fa-wave-square"></i>
+                  <i className="fa-solid fa-wave-square"></i>
                 </div>
                 <div className="text">
                   <h4 className="title">Server Maintenance</h4>
