@@ -2,8 +2,9 @@
 import Image from "next/image";
 import { useState } from "react";
 import LeftSidebar from "@/components/LeftSidebar";
-import About from "@/components/About";
+import Resume from "@/components/Resume";
 import Footer from "@/components/Footer";
+import About from "@/components/About";
 
 export default function Home() {
   let [activeTab, setActiveTab] = useState("about");
@@ -63,7 +64,7 @@ export default function Home() {
               <div className="anik-main-menu-wrap">
                 <nav className="bastami-main-menu main_menu">
                   <ul>
-                    <li className="active">
+                    <li className={activeTab === "about" ? "active" : ""}>
                       <a
                         className="pointer"
                         onClick={() => setActiveTab("about")}
@@ -74,7 +75,7 @@ export default function Home() {
                         About
                       </a>
                     </li>
-                    <li>
+                    <li className={activeTab === "resume" ? "active" : ""}>
                       <a
                         className="pointer"
                         onClick={() => setActiveTab("resume")}
@@ -85,7 +86,7 @@ export default function Home() {
                         Resume
                       </a>
                     </li>
-                    <li>
+                    <li className={activeTab === "works" ? "active" : ""}>
                       <a
                         className="pointer"
                         onClick={() => setActiveTab("works")}
@@ -96,7 +97,7 @@ export default function Home() {
                         Works
                       </a>
                     </li>
-                    <li>
+                    <li className={activeTab === "contact" ? "active" : ""}>
                       <a
                         className="pointer"
                         onClick={() => setActiveTab("contact")}

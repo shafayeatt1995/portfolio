@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import Anik from "@/public/img/anik2.png";
 import Footyamigo from "@/public/img/client/footyamigo.webp";
 import Arbamigo from "@/public/img/client/arbamigo.png";
 import Goat from "@/public/img/client/goat.png";
@@ -18,7 +17,7 @@ export default function About() {
     { name: "SASS", image: "/img/tech/sass.svg", star: 5 },
     { name: "Socket", image: "/img/tech/socket.svg", star: 5 },
     { name: "AWS", image: "/img/tech/aws.svg", star: 3 },
-    { name: "Laravel", image: "/img/tech/laravel.svg", star: 2 },
+    { name: "Laravel", image: "/img/tech/laravel.svg", star: 3 },
   ];
   return (
     <>
@@ -113,9 +112,12 @@ export default function About() {
         <div className="anik-section-title-wrap text-center mb-50">
           <h3 className="section-title">Technology i use</h3>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6  gap-8">
-          {tech.map((t) => (
-            <div className="flex flex-col justify-between min-h-100 mb-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 lg:gap-8">
+          {tech.map((t, i) => (
+            <div
+              className="flex flex-col justify-between min-h-100 mb-6"
+              key={i}
+            >
               <Image
                 height="80"
                 width="80"
@@ -128,14 +130,14 @@ export default function About() {
                 {t?.star &&
                   [...Array(t.star)].map((_, index) => (
                     <i
-                      key={index}
+                      key={index + "fas"}
                       className="fa-solid fa-star text-xs text-amber-500"
                     ></i>
                   ))}
                 {t?.star &&
                   [...Array(5 - t.star)].map((_, index) => (
                     <i
-                      key={index}
+                      key={index + "far"}
                       className="far fa-star text-xs text-amber-500"
                     ></i>
                   ))}
@@ -149,13 +151,13 @@ export default function About() {
         <div className="anik-section-title-wrap text-center mb-50">
           <h3 className="section-title">client</h3>
         </div>
-        <div className="flex justify-between items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-3 items-center gap-8">
           <a
             href="https://dashboard.footyamigo.com/"
             target="_blank"
             className="flex flex-col items-center"
           >
-            <Image src={Footyamigo} className="max-h-36 max-w-36" />
+            <Image src={Footyamigo} className="h-32 w-auto" />
             <p>Footy Amigo</p>
           </a>
           <a
@@ -163,7 +165,7 @@ export default function About() {
             href="https://goat.footyamigo.com/"
             target="_blank"
           >
-            <Image src={Goat} className="max-h-36 max-w-36" />
+            <Image src={Goat} className="h-32 w-auto" />
             <p>Goat Amigo</p>
           </a>
           <a
@@ -171,7 +173,7 @@ export default function About() {
             href="https://app.arbamigo.com/"
             target="_blank"
           >
-            <Image src={Arbamigo} className="max-h-36 max-w-36" />
+            <Image src={Arbamigo} className="h-32 w-auto" />
             <p>Arbitrage</p>
           </a>
         </div>
