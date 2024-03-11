@@ -6,6 +6,7 @@ import Resume from "@/components/Resume";
 import Footer from "@/components/Footer";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
+import Work from "@/components/Work";
 
 export default function Home() {
   let [activeTab, setActiveTab] = useState("about");
@@ -22,103 +23,46 @@ export default function Home() {
     componentToRender = <Contact />;
   }
 
+  const menus = [
+    { name: "About", icon: "fas fa-address-card", tab: "about" },
+    { name: "Resume", icon: "fas fa-clipboard-user", tab: "resume" },
+    { name: "Works", icon: "fas fa-briefcase", tab: "work" },
+    { name: "Contact", icon: "fas fa-address-book", tab: "contact" },
+  ];
+
   return (
     <>
       <div
         className="page-wrapper home-1"
         style={{ backgroundImage: 'url("/img/bg/page-bg-1.jpg")' }}
       >
-        <div className="anik-header-area z-index-5">
-          <div className="container">
-            <div className="anik-header-wrap">
-              <div className="row align-items-center">
-                <div className="col-6">
-                  <div className="anik-header-logo"></div>
-                </div>
-                <div className="col-6">
-                  <div className="anik-header-menu-btn text-right">
-                    <div className="menu-btn toggle_menu">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="mobile-menu-wrap">
-              <div className="mobile-menu mobile_menu"></div>
-            </div>
-          </div>
-        </div>
         <div className="container z-index-3">
-          <div className="row">
+          <div className="flex flex-col lg:flex-row gap-3 lg:gap-10">
             <LeftSidebar />
-            <div className="col-xxl-8 col-xl-9">
+            <div className="flex-1">
+              <ul className="flex w-full bg-white rounded-2xl p-3 lg:px-10 lg:py-4 lg:gap-4 mb-10 sticky top-0 z-10 shadow-lg justify-between lg:justify-start">
+                {menus.map((menu, i) => (
+                  <li
+                    key={i}
+                    className={`lg:py-3 lg:px-4 p-2 px-3 rounded-xl ${
+                      activeTab === menu.tab ? " bg-blue-600 text-white" : ""
+                    }`}
+                  >
+                    <a
+                      className="pointer flex flex-col lg:flex-row items-center"
+                      onClick={() => setActiveTab(menu.tab)}
+                    >
+                      <span className="lg:mr-3 text-xl">
+                        <i className={menu.icon}></i>
+                      </span>
+                      {menu.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
               <div className="anik-page-content-wrap">
                 {componentToRender}
                 <Footer />
-              </div>
-            </div>
-
-            <div className="col-xxl-1 d-xxl-block d-none">
-              <div className="anik-main-menu-wrap">
-                <nav className="bastami-main-menu main_menu">
-                  <ul>
-                    <li className={activeTab === "about" ? "active" : ""}>
-                      <a
-                        className="pointer"
-                        onClick={() => setActiveTab("about")}
-                      >
-                        <span>
-                          <i className="fas fa-address-card"></i>
-                        </span>
-                        About
-                      </a>
-                    </li>
-                    <li className={activeTab === "resume" ? "active" : ""}>
-                      <a
-                        className="pointer"
-                        onClick={() => setActiveTab("resume")}
-                      >
-                        <span>
-                          <i className="fa-solid fa-clipboard-user"></i>
-                        </span>
-                        Resume
-                      </a>
-                    </li>
-                    <li className={activeTab === "works" ? "active" : ""}>
-                      <a
-                        className="pointer"
-                        onClick={() => setActiveTab("works")}
-                      >
-                        <span>
-                          <i className="fas fa-briefcase"></i>
-                        </span>
-                        Works
-                      </a>
-                    </li>
-                    <li className={activeTab === "contact" ? "active" : ""}>
-                      <a
-                        className="pointer"
-                        onClick={() => setActiveTab("contact")}
-                      >
-                        <span>
-                          <i className="fas fa-address-book"></i>
-                        </span>
-                        Contact
-                      </a>
-                    </li>
-                    {/* <li>
-                      <a href="blog.html">
-                        <span>
-                          <i className="fas fa-newspaper"></i>
-                        </span>
-                        Blogs
-                      </a>
-                    </li> */}
-                  </ul>
-                </nav>
               </div>
             </div>
           </div>

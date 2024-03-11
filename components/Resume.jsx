@@ -36,13 +36,13 @@ export default function Resume() {
 
   return (
     <div className="anik-page-content-wrap">
-      <div className="section-wrapper pl-60 pr-60 pt-60">
+      <div className="section-wrapper px-10 pt-60">
         <div className="anik-page-title-wrap mb-15">
           <h2 className="page-title">resume</h2>
         </div>
       </div>
 
-      <div className="section-wrapper pl-60 pr-60 mb-60">
+      <div className="section-wrapper px-10 mb-60">
         <div className="row">
           <div className="col-xl-6 col-lg-7">
             <div className="anik-section-title-wrap mb-20">

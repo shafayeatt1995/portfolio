@@ -500,10 +500,6 @@ textarea:focus::placeholder {
   margin-bottom: 5px;
 }
 
-.mb-10 {
-  margin-bottom: 10px;
-}
-
 .mb-15 {
   margin-bottom: 15px;
 }
@@ -2245,7 +2241,7 @@ textarea:focus::placeholder {
 }
 
 .page-wrapper.home-1 {
-  padding-top: 50px;
+  padding-top: 20px;
   padding-bottom: 60px;
 }
 
@@ -2751,24 +2747,23 @@ textarea:focus::placeholder {
 ******************************************************* 
 *************************************************************** */
 .anik-personal-info-area {
-  width: 400px;
-  border-radius: 20px;
-  background-color: var(--common-white);
+  /* width: 400px; */
+  /* border-radius: 20px; */
+  /* background-color: var(--common-white); */
   text-align: center;
-  padding: 40px 30px;
-  margin-left: -100px;
-  position: sticky;
-  top: 100px;
+  /* padding: 40px 30px; */
+  /* margin-left: -100px; */
+  /* position: sticky;
+  top: 100px; */
 }
 @media only screen and (min-width: 1400px) and (max-width: 1599px) {
   .anik-personal-info-area {
-    width: 340px;
-    margin-left: -40px;
+    width: 355px;
+    /* margin-left: -40px; */
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .anik-personal-info-area {
-    width: 100%;
     margin-left: 0px;
     padding: 30px 15px;
     top: -40px;
@@ -2777,7 +2772,6 @@ textarea:focus::placeholder {
 @media only screen and (min-width: 992px) and (max-width: 1199px),
   only screen and (min-width: 768px) and (max-width: 991px) {
   .anik-personal-info-area {
-    width: 100%;
     margin-left: 0px;
     margin-bottom: 30px;
     top: -40px;
@@ -2785,14 +2779,14 @@ textarea:focus::placeholder {
 }
 @media (max-width: 767px) {
   .anik-personal-info-area {
-    width: 100%;
     margin-left: 0px;
     margin-bottom: 30px;
-    padding: 40px 20px;
+    /* padding: 40px 20px; */
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .anik-personal-info-area {
+    width: 100%;
     padding: 40px 30px;
   }
 }
@@ -2803,7 +2797,7 @@ textarea:focus::placeholder {
   overflow: hidden;
   margin: auto;
   margin-bottom: 21px;
-  margin-top: -180px;
+  /* margin-top: -180px; */
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .anik-personal-info-img {

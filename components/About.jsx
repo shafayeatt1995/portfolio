@@ -15,13 +15,13 @@ export default function About() {
     { name: "Next JS", image: "/img/tech/next.svg", star: 3 },
     { name: "Tailwind CSS", image: "/img/tech/tailwind.svg", star: 5 },
     { name: "SASS", image: "/img/tech/sass.svg", star: 5 },
-    { name: "Socket", image: "/img/tech/socket.svg", star: 5 },
+    { name: "Socket.io", image: "/img/tech/socket.svg", star: 5 },
     { name: "AWS", image: "/img/tech/aws.svg", star: 3 },
     { name: "Laravel", image: "/img/tech/laravel.svg", star: 3 },
   ];
   return (
     <>
-      <div className="section-wrapper pl-60 pr-60 pt-60">
+      <div className="section-wrapper pt-60 px-10">
         <div className="anik-page-title-wrap mb-35">
           <h2 className="page-title">about</h2>
           <p>
@@ -37,7 +37,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className="section-wrapper pl-60 pr-60">
+      <div className="section-wrapper px-10">
         <div className="anik-section-title-wrap mb-30">
           <h3 className="section-title">What I do!</h3>
         </div>
@@ -149,7 +149,7 @@ export default function About() {
 
       <div className="section-wrapper bg-light-white-2 pt-45 pb-60 pl-60 pr-60">
         <div className="anik-section-title-wrap text-center mb-50">
-          <h3 className="section-title">client</h3>
+          <h3 className="section-title">Clients</h3>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 items-center gap-8">
           <a
