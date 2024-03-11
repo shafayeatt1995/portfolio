@@ -6,7 +6,7 @@ import Resume from "@/components/Resume";
 import Footer from "@/components/Footer";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
-import Work from "@/components/Work";
+import Portfolio from "@/components/Portfolio";
 
 export default function Home() {
   let [activeTab, setActiveTab] = useState("about");
@@ -17,8 +17,8 @@ export default function Home() {
     componentToRender = <About />;
   } else if (activeTab === "resume") {
     componentToRender = <Resume />;
-  } else if (activeTab === "work") {
-    componentToRender = <Work />;
+  } else if (activeTab === "Portfolio") {
+    componentToRender = <Portfolio />;
   } else if (activeTab === "contact") {
     componentToRender = <Contact />;
   }
@@ -26,7 +26,7 @@ export default function Home() {
   const menus = [
     { name: "About", icon: "fas fa-address-card", tab: "about" },
     { name: "Resume", icon: "fas fa-clipboard-user", tab: "resume" },
-    { name: "Works", icon: "fas fa-briefcase", tab: "work" },
+    { name: "Portfolio", icon: "fas fa-briefcase", tab: "Portfolio" },
     { name: "Contact", icon: "fas fa-address-book", tab: "contact" },
   ];
 
@@ -40,7 +40,7 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row gap-3 lg:gap-10">
             <LeftSidebar />
             <div className="flex-1">
-              <ul className="flex w-full bg-white rounded-2xl p-3 lg:px-10 lg:py-4 lg:gap-4 mb-10 sticky top-0 z-10 shadow-lg justify-between lg:justify-start">
+              <ul className="flex w-full bg-white rounded-2xl p-3 lg:px-10 lg:py-4 lg:gap-4 mb-3 sticky top-0 z-10 shadow-md justify-between lg:justify-start">
                 {menus.map((menu, i) => (
                   <li
                     key={i}

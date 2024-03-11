@@ -11,8 +11,8 @@ export default function About() {
     { name: "Express", image: "/img/tech/express.svg", star: 5 },
     { name: "Node JS", image: "/img/tech/node.svg", star: 4 },
     { name: "MongoDB", image: "/img/tech/mongodb.png", star: 5 },
-    { name: "React JS", image: "/img/tech/react.svg", star: 3 },
-    { name: "Next JS", image: "/img/tech/next.svg", star: 3 },
+    { name: "React JS", image: "/img/tech/react.svg", star: 4 },
+    { name: "Next JS", image: "/img/tech/next.svg", star: 4 },
     { name: "Tailwind CSS", image: "/img/tech/tailwind.svg", star: 5 },
     { name: "SASS", image: "/img/tech/sass.svg", star: 5 },
     { name: "Socket.io", image: "/img/tech/socket.svg", star: 5 },
@@ -25,14 +25,14 @@ export default function About() {
         <div className="anik-page-title-wrap mb-35">
           <h2 className="page-title">about</h2>
           <p>
-            As a Full Stack Developer, I'm dedicated to crafting innovative web
-            and mobile solutions. With proficiency in both front-end and
-            back-end technologies, I bring ideas to life, ensuring robust
-            functionality and engaging user interfaces. My passion for coding
-            and problem-solving drives me to deliver high-quality, scalable
-            applications. I thrive in collaborative environments, always eager
-            to learn and adapt to emerging technologies to stay at the forefront
-            of the industry.
+            My name is SHAFAYET AL-ANIK. I am a professional and enthusiastic
+            programmer in my daily life. I am a quick learner with a
+            self-learning attitude. I love to learn and explore new technologies
+            and am passionate about problem-solving. I love almost all the
+            stacks of web application development and love to make the web more
+            open to the world. My core skill is based on JavaScript and I love
+            to do most of the things using JavaScript. I am available for any
+            kind of job opportunity that suits my skills and interests.
           </p>
         </div>
       </div>

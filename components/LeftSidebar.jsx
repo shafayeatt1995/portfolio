@@ -11,7 +11,7 @@ export default function LeftSidebar() {
         </div>
 
         <h4 className="anik-personal-info-name">
-          <a href="#">Shafayet Al-Anik</a>
+          <a>Shafayet Al-Anik</a>
         </h4>
         <span className="anik-personal-info-bio mb-15">
           Full stack developer
