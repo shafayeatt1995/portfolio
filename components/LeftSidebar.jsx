@@ -60,7 +60,7 @@ export default function LeftSidebar() {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g clip-path="url(#clip0_20_3)">
+                <g clipPath="url(#clip0_20_3)">
                   <path
                     d="M16.5 10.7663C16.5 10.2098 16.077 9.75675 15.555 9.75675H8.00701C7.48501 9.75675 7.06201 10.2098 7.06201 10.7663C7.06201 11.3228 7.48426 11.7758 8.00701 11.7758H15.555C16.077 11.7765 16.5 11.3235 16.5 10.7663Z"
                     fill="#B3B1B0"
@@ -136,13 +136,17 @@ export default function LeftSidebar() {
             </div>
             <div className="text">
               <span>Location</span>
-              <p>Naogaon, Dhaka</p>
+              <p>Dhaka, Bangladesh</p>
             </div>
           </div>
         </div>
 
         <div className="anik-personal-info-btn">
-          <a className="btn-1" href="#">
+          <a
+            className="btn-1"
+            href="https://drive.google.com/file/d/1SP_tY2kJYUwuMHtF3jucWPeYtD0zADv7/view?usp=sharing"
+            target="_blank"
+          >
             <span className="icon">
               <i className="fas fa-download"></i>
             </span>
