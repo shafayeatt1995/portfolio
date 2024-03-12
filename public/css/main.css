@@ -2637,6 +2637,10 @@ textarea:focus::placeholder {
   height: 18px;
   width: 18px;
 }
+.leetcode svg {
+  height: 18px;
+  width: 18px;
+}
 
 .home-1 .anik-header-area {
   /* margin-bottom: 205px; */
@@ -2884,6 +2888,17 @@ textarea:focus::placeholder {
 }
 .anik-personal-info-social-link .upwork:hover {
   background: #6fda44;
+  color: #fff;
+}
+.anik-personal-info-social-link .leetcode {
+  transform: translateY(3px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #E7A41F;
+}
+.anik-personal-info-social-link .leetcode:hover {
+  background: #E7A41F;
   color: #fff;
 }
 .anik-personal-info-social-link .facebook {

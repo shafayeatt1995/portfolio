@@ -102,7 +102,7 @@ export default function Resume() {
             </div>
 
             <div className="anik-card-item bg-prink mb-20">
-              <span className="card-subtitle">Dec 2021 - Jun 2023</span>
+              <span className="card-subtitle">Dec 2021 - Mar 2024</span>
               <h6 className="card-title">Full Stack Developer</h6>
               <a
                 href="https://footyamigo.com/"

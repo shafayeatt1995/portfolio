@@ -7,13 +7,20 @@ import Image from "next/image";
 export default function Portfolio() {
   const lists = [
     {
-      name: "Footyamigo",
+      name: "AI-based outsmart bookmakers",
       url: "https://dashboard.footyamigo.com/",
       role: "Full stack developer",
       image: FootyAmigo,
-      tech: "Vue.js, Nuxt.js, Vuex, Bootstrap, SCSS, Express.js, MongoDB, Socket.io, AWS SES, AWS S3, AWS LAMBDA, Node Mailer, JWT, PM2",
-      description:
-        "Footy Amigo is a platform designed to assist football bettors and traders in making well-informed, data-driven betting decisions. It offers pre-match and in-play match alerts based on user-defined criteria, leveraging historical statistics and AI algorithms. Users can create, test, and clone strategies, access community insights, and benefit from features like back testing and dynamic stats alerts. With a free trial available, Footy Amigo aims to help users gain an edge over bookies and achieve profitable outcomes in football betting.",
+      tech: "Nuxt, Vuex, Express, OpenAI API, Roanuz Football API, JWT, Stripe, Paddle, MongoDB, Mongoose Socket.IO and AWS services",
+      description: `Developed API using Express, which communicates with MongoDB via Mongoose.
+      <br />
+      ❖ Designed and developed UI using NuxtJS, and other necessary npm libraries.
+      <br />
+      ❖ Built multiple AI assistants using OpenAI's latest model and trained them using our dataset.
+      <br />
+      ❖ Utilized Roanuz Football API for collecting live game data and training Open AI. 
+      <br />
+❖ Implemented role-based auth, subscription plan, and integrated payment with Stripe and Paddle. `,
     },
     {
       name: "Arbitrage",
@@ -75,10 +82,10 @@ export default function Portfolio() {
                 </p>
               </div>
             </div>
-            <p>
+            <div className="mt-2">
               <span className=" text-lg font-semibold">Description: </span>
-              {d.description}
-            </p>
+              <div dangerouslySetInnerHTML={{ __html: d.description }}></div>
+            </div>
           </div>
         ))}
         {/* <div className="flex flex-col">
